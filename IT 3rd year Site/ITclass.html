@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <style>
+    body {
+        background: #ece5da;
+        font-family: 'Raleway', sans-serif;
+      }
+      
+      nav {
+        margin: auto;
+        margin-top: 40px;
+        position: relative;
+        width: 50vw;
+        min-width: 320px;
+        height: 100px;
+      }
+      
+      nav h2 {
+        border-radius: 2px;
+        position: relative;
+        background: tomato;
+        height: 40px;
+        text-transform: uppercase;
+        color: ivory;
+        font-weight: 200;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 4px 4px 20px -2px rgba(0,0,0,.35);
+        transition: all .4s;
+      }
+      
+      nav:hover h2{
+        transform: translateY(-2px);
+        box-shadow: 2px 2px 5px -1px rgba(0,0,0,.35);
+       }
+      nav:hover:active h2{
+        transform: translateY(10px);
+        box-shadow: 0px -1px 2px 0px rgba(0,0,0,.35);
+       }
+      
+      input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+        height: 40px;
+      }
+      
+      #toggle:checked ~ul {
+        height: 0%;
+      }
+      
+      nav ul {
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 0;
+        list-style: none;
+        overflow: hidden;
+        text-align: right;
+        margin-bottom: 22px;
+        text-align: center;
+        transition: all .4s ease-out;
+        height: 100%;
+        
+      }
+      nav ul li {
+        border-radius: 2px;
+        position: relative;
+        display: inline-block;
+        margin-left: 35px;
+        line-height: 1.5;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+        background: tomato;
+        transition: background 3s;
+        box-shadow: 2px 2px 10px -2px rgba(0,0,0,.35);
+      }
+      
+      nav ul li:hover {
+        background: mediumorchid;
+        transition: background .45s;
+      }
+      
+      nav ul a {
+        display: block;
+        color: ivory;
+        text-transform: lowercase;
+        font-size: 18px;
+        font-weight: 200;
+        text-decoration: none;
+        transition: color .3s;
+      }
+    </style>
+      
+      
+  </head>
+
+  <body>
+    <nav>
+        <h2>Software Engg</h2>
+         <input id="toggle" type="checkbox" checked>
+      <ul>
+        <li><a href="http://diino.rf.gd/pdfs/All%20quest%20paper.pdf">question paper</a></li>
+        <li><a href="http://diino.rf.gd/pdfs/SE%20notes.pdf">notes</a></li>
+      </ul>
+   </nav>
+   <nav>
+    <h2>Maths 5</h2>
+     <input id="toggle" type="checkbox" checked>
+  <ul>
+    <li><a href="http://diino.rf.gd/pdfs/All%20quest%20paper.pdf">question paper</a></li>
+        <li><a href="http://diino.rf.gd/pdfs/M5%20notes.pdf">notes</a></li>
+  </ul>
+  <nav>
+    <h2>GIS</h2>
+     <input id="toggle" type="checkbox" checked>
+  <ul>
+    <li><a href="http://diino.rf.gd/pdfs/All%20quest%20paper.pdf">question paper</a></li>
+    <li><a href="http://diino.rf.gd/pdfs/GIS%20notes.pdf">notes</a></li>
+  </ul>
+</nav>
+<nav>
+    <h2>web tech</h2>
+     <input id="toggle" type="checkbox" checked>
+  <ul>
+    <li><a href="http://diino.rf.gd/pdfs/All%20quest%20paper.pdf">question paper</a></li>
+    <li><a href="http://diino.rf.gd/pdfs/WT%20notes.pdf">notes</a></li>
+  </ul>
+</nav>
+<nav>
+    <h2>computer network</h2>
+     <input id="toggle" type="checkbox" checked>
+  <ul>
+    <li><a href="http://diino.rf.gd/pdfs/All%20quest%20paper.pdf">question paper</a></li>
+    <li><a href="http://diino.rf.gd/pdfs/CN%20notes.pdf">notes</a></li>
+  </ul>
+</nav>
+<nav>
+    <h2>Micro process</h2>
+     <input id="toggle" type="checkbox" checked>
+  <ul>
+    <li><a href="http://diino.rf.gd/pdfs/All%20quest%20paper.pdf">question paper</a></li>
+    <li><a href="#">notes</a></li>
+  </ul>
+</nav>
+
+  </body>
+</html>
